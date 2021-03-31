@@ -3,18 +3,22 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  return(array[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var indice = array.length - 1;
+  return(array[indice]); 
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return(array.length);
 }
 
 
@@ -23,6 +27,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var valorarr = 0;
+  for (var i = 0; i < array.length; i++) {
+    valorarr = array[i] + 1;
+    array[i] = valorarr;
+    
+  }
+  return(array);
 }
 
 
@@ -30,6 +41,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  let nuevaLongitud = array.push(elemento);
+  return(array);
 }
 
 
@@ -38,6 +51,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  let nuevaLongitud = array.unshift(elemento);
+  return(array);
 }
 
 
@@ -47,6 +62,15 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var palabralista = "";
+  for (var i = 0; i < array.length; i++) {
+    if (i == 1) {
+      palabralista =array[i];
+    }
+    palabralista = palabralista+" "+array[i];
+    
+  }
+  return(palabralista);
 }
 
 
